@@ -1,0 +1,31 @@
+{
+  "name": "ts-docker-template",
+  "version": "1.0.0",
+  "description": "Typescript Docker App",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development tsc-watch --onSuccess \"node ./dist/index.js\"",
+    "prebuild": "rimraf dist",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crofoot/ts-docker-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crofoot/ts-docker-template/issues"
+  },
+  "homepage": "https://github.com/crofoot/ts-docker-template#readme",
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "cross-env": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "dotenv-flow": "^3.2.0"
+  }
+}
